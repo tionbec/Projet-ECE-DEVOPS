@@ -1,6 +1,6 @@
 const { expect } = require('chai')
 const userController = require('../lab/src/controllers/user')
-const db = require('../src/dbClient')
+const db = require('../lab/src/dbClient')
 
 describe('User', () => {
 
