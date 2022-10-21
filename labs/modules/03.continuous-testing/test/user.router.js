@@ -2,7 +2,7 @@ const chai = require('chai')
 const chaiHttp = require('chai-http')
 const app = require('../src/index')
 const db = require('../src/dbClient')
-const userController = require('../src/controllers/user')
+const userController = require('../lab/src/controllers/user')
 
 chai.use(chaiHttp)
 
