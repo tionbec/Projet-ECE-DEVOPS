@@ -2,10 +2,13 @@ version: '3'
 services:
   redis:
     image: redis
+    volumes:
+      - db-data:/data
   web:
-    # COMPLETE HERE
+    depends_on:
+      - redis
     build: .
     ports:
       - "5000:8080"
-    environment:
-      # ...
+volumes:
+  db-data:
