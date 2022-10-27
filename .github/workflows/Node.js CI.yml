@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: userapi
+        working-directory: labs/modules/03.continuous-testing
 
     strategy:
       matrix:
