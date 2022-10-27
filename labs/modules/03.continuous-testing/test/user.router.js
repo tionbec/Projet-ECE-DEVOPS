@@ -1,8 +1,8 @@
 const chai = require('chai')
 const chaiHttp = require('chai-http')
-const app = require('../src/index')
-const db = require('../src/dbClient')
-const userController = require('../src/controllers/user')
+const app = require('../lab/src/index')
+const db = require('../lab/src/dbClient')
+const userController = require('../lab/src/controllers/user')
 
 chai.use(chaiHttp)
 
@@ -85,7 +85,7 @@ describe('User REST API', () => {
       })
     })
 
-    it('can not get a user when it does not exist', (done) => {
+    it('can not get a user when it does not exis', (done) => {
       chai.request(app)
         .get('/user/invalid')
         .then((res) => {
